@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmvjvqso00k3f"]
+
+[ext_resource type="Script" uid="uid://0v2q4cfvcsb7" path="res://bullet.gd" id="1_v8qja"]
+[ext_resource type="Texture2D" uid="uid://cgw51a5wqb63" path="res://racecar_tire_1.png" id="2_v8qja"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v7oki"]
+radius = 4.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_v8qja")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(1, 0)
+rect = Rect2(-10, -9, 18, 18)
+
+[node name="RacecarTire" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("2_v8qja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v7oki")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

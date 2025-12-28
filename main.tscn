@@ -42,5 +42,5 @@ rotation = -0.68084824
 scale = Vector2(0.9999998, 0.9999999)
 min_wait_time = 0.015
 
-[node name="Node2D" parent="." instance=ExtResource("3_h2yge")]
+[node name="Player" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(321, 357)

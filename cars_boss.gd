@@ -20,14 +20,14 @@ func shoot():
 func shoot1():
 	var bullet:Bullet = Bullet_scene.instantiate()
 	owner.add_child(bullet)
-	bullet.rotate_bullet(bullet_angle)
-	bullet_angle += angle_increment
+	#bullet.rotate_bullet(bullet_angle)
+	#bullet_angle += angle_increment
 	bullet.global_transform = $Muzzle2.global_transform 
 
 func _on_timer_timeout():
-	shoot()
+	#shoot()
 	shoot1()
 
 func _on_timer_2_timeout():
-	$Timer.wait_time = maxf(min_wait_time, $Timer.wait_time/2)
-	
+	#$Timer.wait_time = maxf(min_wait_time, $Timer.wait_time/2)
+	pass

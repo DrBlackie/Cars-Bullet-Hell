@@ -5,24 +5,27 @@ extends Area2D
 @export var bullet_angle = 0.0
 @export var min_wait_time = 0.05
 @export var angle_increment = 25
+@export var player: Node2D
 
 func shoot():
 	#var bullet:Bullet = Bullet_scene.instantiate()
 	#owner.add_child(bullet)
 	#bullet.rotate_bullet(rng.randf_range(-45, 45))
-	#bullet.global_transform = $Muzzle.global_transform 
+	#bullet.global_transform = $Muzzle.global_transform
 	var bullet:Bullet = Bullet_scene.instantiate()
 	owner.add_child(bullet)
 	bullet.rotate_bullet(bullet_angle)
 	bullet_angle += angle_increment
-	bullet.global_transform = $Muzzle.global_transform 
-	
+	bullet.global_transform = $Muzzle.global_transform
+
 func shoot1():
 	var bullet:Bullet = Bullet_scene.instantiate()
 	owner.add_child(bullet)
-	#bullet.rotate_bullet(bullet_angle)
-	#bullet_angle += angle_increment
-	bullet.global_transform = $Muzzle2.global_transform 
+	# point at the player
+	bullet.global_transform = $Muzzle2.global_transform
+
+	var dir := (player.global_position - bullet.global_position).normalized()
+	bullet.direction = dir
 
 func _on_timer_timeout():
 	#shoot()

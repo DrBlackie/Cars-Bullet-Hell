@@ -4,14 +4,9 @@ class_name Bullet
 
 var speed = 200
 var direction = Vector2.DOWN
-var target: Node2D
-
-func _ready():
-	target = get_parent().get_node("Player")
 
 func _physics_process(delta):
-	var target_dir = (target.global_position - global_position).normalized()
-	translate(target_dir * speed * delta)
+	translate(direction * speed * delta)
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

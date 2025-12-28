@@ -35,12 +35,13 @@ rotates = false
 loop = false
 script = ExtResource("1_0xm2m")
 
-[node name="Boss" parent="Path2D/PathFollow2D" instance=ExtResource("1_ig7tw")]
+[node name="Boss" parent="Path2D/PathFollow2D" node_paths=PackedStringArray("player") instance=ExtResource("1_ig7tw")]
 z_index = 1
 position = Vector2(-0.104599, 1.2071152)
 rotation = -0.68084824
 scale = Vector2(0.9999998, 0.9999999)
 min_wait_time = 0.015
+player = NodePath("../../../Player")
 
 [node name="Player" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(321, 357)

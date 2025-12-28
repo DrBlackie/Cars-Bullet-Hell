@@ -3,6 +3,8 @@ extends CharacterBody2D
 @export var speed := 300
 @export var focus_speed := 160
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var audio = $AudioStreamPlayer
+
 var screen_size: Vector2
 var focus := false
 
@@ -25,7 +27,9 @@ func _process(_delta):
 	if !focus:
 		animated_sprite.visible = false
 		$AnimatedSprite2D.visible = false
-		
-		
-	
-	
+
+func hit():
+	audio.play()
+	$spongebob_popsicle.process_mode = Node.PROCESS_MODE_DISABLED 
+	$spongebob_popsicle.visible = false
+	$CollisionShape2D.set_deferred("disabled", true)

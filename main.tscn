@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cghh5jt0dobxa"]
+[gd_scene load_steps=6 format=3 uid="uid://cghh5jt0dobxa"]
 
 [ext_resource type="Script" uid="uid://cru1ugq8550pd" path="res://path_follow_2d.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dqgoxood3dvux" path="res://cars_boss.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://fw2opyld813v" path="res://purple_gradient_bg.png" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dlak5ni86sm0l" path="res://player.tscn" id="3_h2yge"]
-[ext_resource type="AudioStream" uid="uid://dgqdxgfiuwlkn" path="res://kachow.wav" id="4_1bvp3"]
 
 [sub_resource type="Curve2D" id="Curve2D_7dm0k"]
 bake_interval = 0.01
@@ -22,6 +21,7 @@ offset_bottom = 479.0
 texture = ExtResource("1_lquwl")
 flip_h = true
 flip_v = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(-25.25225, -96.663605)
@@ -44,7 +44,3 @@ min_wait_time = 0.015
 
 [node name="Node2D" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(321, 357)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_1bvp3")
-max_polyphony = 10

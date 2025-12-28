@@ -3,10 +3,8 @@ extends PathFollow2D
 var speed = 100
 var direction = 1
 
-
 func _ready():
 	progress_ratio = 0.0
-	print("hello river")
 
 func _process(delta):
 	if progress_ratio == 0:

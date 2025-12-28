@@ -7,7 +7,6 @@ extends Area2D
 @export var angle_increment = 25
 @export var player: Node2D
 
-func shoot():
 	#var bullet:Bullet = Bullet_scene.instantiate()
 	#owner.add_child(bullet)
 	#bullet.rotate_bullet(rng.randf_range(-45, 45))

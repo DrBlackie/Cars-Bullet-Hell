@@ -6,7 +6,7 @@ var direction = 1
 
 func _ready():
 	progress_ratio = 0.0
-	print("hello blackie")
+	print("hello river")
 
 func _process(delta):
 	if progress_ratio == 0:

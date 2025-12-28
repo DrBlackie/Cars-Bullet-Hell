@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqgoxood3dvux"]
+
+[ext_resource type="Texture2D" uid="uid://dievm3geqiox" path="res://lightning_mcqueen_pixellated.png" id="1_dobhq"]
+[ext_resource type="Script" uid="uid://dd1eisjc3um0e" path="res://cars_boss.gd" id="1_r4m5a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4m5a"]
+size = Vector2(197.28084, 101.45049)
+
+[node name="Boss" type="Area2D"]
+script = ExtResource("1_r4m5a")
+bullet_angle = 2.0
+min_wait_time = 0.01
+
+[node name="LightningMcqueenPixellated" type="Sprite2D" parent="."]
+scale = Vector2(0.19361413, 0.17732884)
+texture = ExtResource("1_dobhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8.25, 0.5000019)
+scale = Vector2(0.74259615, 0.6801347)
+shape = SubResource("RectangleShape2D_r4m5a")
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(-35, 42)
+
+[node name="Muzzle2" type="Marker2D" parent="."]
+position = Vector2(19, 42)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

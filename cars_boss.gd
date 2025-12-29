@@ -24,7 +24,7 @@ func radial_homing_shoot():
 	#bullet.rotate_bullet(rng.randf_range(-45, 45))
 	#bullet.global_transform = $Muzzle.global_transform
 	var bullet:Bullet = Bullet_scene.instantiate()
-	owner.add_child(bullet)
+	get_tree().get_first_node_in_group("bullets").add_child(bullet)
 	bullet.rotate_bullet(bullet_angle)
 	bullet_angle += angle_increment
 	bullet.global_transform = $Muzzle.global_transform

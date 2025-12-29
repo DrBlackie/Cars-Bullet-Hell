@@ -10,7 +10,6 @@ size = Vector2(197.28084, 101.45049)
 script = ExtResource("1_r4m5a")
 bullet_angle = 2.0
 min_wait_time = 0.01
-burst_cooldown = 2.0
 
 [node name="LightningMcqueenPixellated" type="Sprite2D" parent="."]
 scale = Vector2(0.19361413, 0.17732884)
@@ -28,7 +27,7 @@ position = Vector2(-35, 42)
 position = Vector2(19, 42)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.05
+wait_time = 0.02
 autostart = true
 
 [node name="Timer2" type="Timer" parent="."]

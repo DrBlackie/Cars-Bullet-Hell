@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://ck5ii3vkpb8p1"]
+
+[ext_resource type="Script" uid="uid://dkbcx5xx4mh3x" path="res://scripts/mater_path_follow_2d.gd" id="1_1gee6"]
+[ext_resource type="Texture2D" uid="uid://ehyve0i5bjcf" path="res://art/mater_pixel.png" id="1_hjru3"]
+[ext_resource type="Script" uid="uid://3qtg8dgt8vrh" path="res://scripts/mater.gd" id="2_t7f71"]
+
+[sub_resource type="Curve2D" id="Curve2D_hjru3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0.38771933, 0.27847466, 0, 0, 0, 0, 97.368484, 63.436913, 0, 0, 0, 0, 162.10379, 45.906723, 0, 0, 0, 0, 221.30026, 66.27268, 0, 0, 0, 0, 354.52783, 13.942436)
+}
+point_count = 5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjru3"]
+size = Vector2(56, 41)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-0.109455466, 0)
+scale = Vector2(2.2652931, 2.1517043)
+curve = SubResource("Curve2D_hjru3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(0.38771933, 0.27847466)
+rotation = 0.5772514
+loop = false
+script = ExtResource("1_1gee6")
+
+[node name="Mater" type="Area2D" parent="Path2D/PathFollow2D"]
+scale = Vector2(0.593, 0.593)
+script = ExtResource("2_t7f71")
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Mater"]
+scale = Vector2(0.14685309, 0.14685312)
+texture = ExtResource("1_hjru3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Mater"]
+position = Vector2(5.3470163, 0.5415764)
+scale = Vector2(1.0000002, 0.9999998)
+shape = SubResource("RectangleShape2D_hjru3")
+
+[node name="Muzzle3" type="Marker2D" parent="Path2D/PathFollow2D/Mater"]
+position = Vector2(6.053069, 22.62034)

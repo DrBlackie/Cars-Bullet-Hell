@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dgqdxgfiuwlkn"
-path="res://.godot/imported/kachow.wav-b6038310dd21d27ccede1af22916784e.sample"
+path="res://.godot/imported/kachow.wav-85ed7edeb683c597e7a422b9a1e01eca.sample"
 
 [deps]
 
-source_file="res://kachow.wav"
-dest_files=["res://.godot/imported/kachow.wav-b6038310dd21d27ccede1af22916784e.sample"]
+source_file="res://audio/kachow.wav"
+dest_files=["res://.godot/imported/kachow.wav-85ed7edeb683c597e7a422b9a1e01eca.sample"]
 
 [params]
 

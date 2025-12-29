@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da0phwsw6iac8"
-path="res://.godot/imported/racecar_tire.png-aeb1512c98db72894b43d01c6e868f32.ctex"
+uid="uid://l27cyq4wpp8m"
+path="res://.godot/imported/spongebob_popsicle.png-591d10dea23a13f84d1744ab3aff16d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://racecar_tire.png"
-dest_files=["res://.godot/imported/racecar_tire.png-aeb1512c98db72894b43d01c6e868f32.ctex"]
+source_file="res://art/spongebob_popsicle.png"
+dest_files=["res://.godot/imported/spongebob_popsicle.png-591d10dea23a13f84d1744ab3aff16d6.ctex"]
 
 [params]
 

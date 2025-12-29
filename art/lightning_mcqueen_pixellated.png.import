@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgw51a5wqb63"
-path="res://.godot/imported/racecar_tire_1.png-500b14c22f145d41b1396c45ede4547f.ctex"
+uid="uid://dievm3geqiox"
+path="res://.godot/imported/lightning_mcqueen_pixellated.png-1bf7501e31404b7f061c8ac972c7844e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://racecar_tire_1.png"
-dest_files=["res://.godot/imported/racecar_tire_1.png-500b14c22f145d41b1396c45ede4547f.ctex"]
+source_file="res://art/lightning_mcqueen_pixellated.png"
+dest_files=["res://.godot/imported/lightning_mcqueen_pixellated.png-1bf7501e31404b7f061c8ac972c7844e.ctex"]
 
 [params]
 

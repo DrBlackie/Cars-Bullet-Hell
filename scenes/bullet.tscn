@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmvjvqso00k3f"]
 
-[ext_resource type="Script" uid="uid://0v2q4cfvcsb7" path="res://bullet.gd" id="1_v8qja"]
-[ext_resource type="Texture2D" uid="uid://cgw51a5wqb63" path="res://racecar_tire_1.png" id="2_v8qja"]
+[ext_resource type="Script" uid="uid://0v2q4cfvcsb7" path="res://scripts/bullet.gd" id="1_v8qja"]
+[ext_resource type="Texture2D" uid="uid://cgw51a5wqb63" path="res://art/racecar_tire_1.png" id="2_v8qja"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v7oki"]
 radius = 4.0

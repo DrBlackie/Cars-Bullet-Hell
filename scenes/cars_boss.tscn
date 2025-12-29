@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqgoxood3dvux"]
 
-[ext_resource type="Texture2D" uid="uid://dievm3geqiox" path="res://lightning_mcqueen_pixellated.png" id="1_dobhq"]
-[ext_resource type="Script" uid="uid://dd1eisjc3um0e" path="res://cars_boss.gd" id="1_r4m5a"]
+[ext_resource type="Texture2D" uid="uid://dievm3geqiox" path="res://art/lightning_mcqueen_pixellated.png" id="1_dobhq"]
+[ext_resource type="Script" uid="uid://dd1eisjc3um0e" path="res://scripts/cars_boss.gd" id="1_r4m5a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4m5a"]
 size = Vector2(197.28084, 101.45049)

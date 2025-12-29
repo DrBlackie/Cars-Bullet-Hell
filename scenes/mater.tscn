@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4ib6b713y4rv"]
+[gd_scene load_steps=6 format=3 uid="uid://ck5ii3vkpb8p1"]
 
-[ext_resource type="Script" path="res://mater_path_follow_2d.gd" id="1_1gee6"]
-[ext_resource type="Texture2D" uid="uid://ehyve0i5bjcf" path="res://mater_pixel.png" id="1_hjru3"]
-[ext_resource type="Script" uid="uid://3qtg8dgt8vrh" path="res://mater.gd" id="2_t7f71"]
+[ext_resource type="Script" uid="uid://dkbcx5xx4mh3x" path="res://scripts/mater_path_follow_2d.gd" id="1_1gee6"]
+[ext_resource type="Texture2D" uid="uid://ehyve0i5bjcf" path="res://art/mater_pixel.png" id="1_hjru3"]
+[ext_resource type="Script" uid="uid://3qtg8dgt8vrh" path="res://scripts/mater.gd" id="2_t7f71"]
 
 [sub_resource type="Curve2D" id="Curve2D_hjru3"]
 _data = {
@@ -27,7 +27,7 @@ loop = false
 script = ExtResource("1_1gee6")
 
 [node name="Mater" type="Area2D" parent="Path2D/PathFollow2D"]
-scale = Vector2(0.59299994, 0.593)
+scale = Vector2(0.593, 0.593)
 script = ExtResource("2_t7f71")
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Mater"]

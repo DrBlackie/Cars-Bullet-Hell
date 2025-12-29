@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fw2opyld813v"
-path="res://.godot/imported/purple_gradient_bg.png-6fdb21bc81d0217de7985aeee08d9887.ctex"
+path="res://.godot/imported/purple_gradient_bg.png-ba65e0d8fa260a81d4a7f284bdc759f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://purple_gradient_bg.png"
-dest_files=["res://.godot/imported/purple_gradient_bg.png-6fdb21bc81d0217de7985aeee08d9887.ctex"]
+source_file="res://art/purple_gradient_bg.png"
+dest_files=["res://.godot/imported/purple_gradient_bg.png-ba65e0d8fa260a81d4a7f284bdc759f7.ctex"]
 
 [params]
 

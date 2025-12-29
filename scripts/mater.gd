@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready  var Bullet_scene = preload("res://bullet.tscn")
+@onready  var Bullet_scene = preload("res://scenes/bullet.tscn")
 @export var burst_count := 8
 @export var burst_cooldown := 1.5
 @export var burst_spacing := 0.05

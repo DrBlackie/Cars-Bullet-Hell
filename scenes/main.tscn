@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://cghh5jt0dobxa"]
 
-[ext_resource type="Script" uid="uid://cru1ugq8550pd" path="res://path_follow_2d.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://dqgoxood3dvux" path="res://cars_boss.tscn" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://fw2opyld813v" path="res://purple_gradient_bg.png" id="1_lquwl"]
-[ext_resource type="PackedScene" uid="uid://dlak5ni86sm0l" path="res://player.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://d4ib6b713y4rv" path="res://mater.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bojxn014bl4mo" path="res://scenes/cars_boss.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://fw2opyld813v" path="res://art/purple_gradient_bg.png" id="1_lquwl"]
+[ext_resource type="Script" uid="uid://cru1ugq8550pd" path="res://scripts/path_follow_2d.gd" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://droso3dd18a4j" path="res://scenes/player.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://ck5ii3vkpb8p1" path="res://scenes/mater.tscn" id="5_lquwl"]
 
 [sub_resource type="Curve2D" id="Curve2D_7dm0k"]
 bake_interval = 0.01
@@ -34,7 +34,7 @@ position = Vector2(119.68114, 119.98219)
 rotation = 0.67950374
 rotates = false
 loop = false
-script = ExtResource("1_0xm2m")
+script = ExtResource("2_lquwl")
 
 [node name="Boss" parent="BossPath2D/BossPathFollow2D" node_paths=PackedStringArray("player") instance=ExtResource("1_ig7tw")]
 z_index = 1

@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready  var Bullet_scene = preload("res://bullet.tscn")
+@onready  var Bullet_scene = preload("res://scenes/bullet.tscn")
 @onready var rng = RandomNumberGenerator.new()
 @export var bullet_angle = 0.0
 @export var min_wait_time = 0.05

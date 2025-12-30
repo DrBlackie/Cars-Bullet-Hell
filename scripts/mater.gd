@@ -6,14 +6,13 @@ extends Area2D
 @export var burst_spacing := 0.05
 @export var bullet_speed := 600
 @export var player: CharacterBody2D
+var on_screen = false
 
 func _ready():
 	player = get_tree().get_first_node_in_group("Player")
-	print(player)
-	start_firing()
 
 func start_firing():
-	while true:
+	while on_screen:
 		await fire_burst()
 		await get_tree().create_timer(burst_cooldown).timeout
 
@@ -33,3 +32,12 @@ func fire_bullet(dir: Vector2):
 	b.global_position = $Muzzle3.global_position
 	b.direction = dir
 	b.speed = bullet_speed
+
+
+func _on_visible_on_screen_notifier_2d_screen_entered():
+	on_screen = true
+	start_firing()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	on_screen = false

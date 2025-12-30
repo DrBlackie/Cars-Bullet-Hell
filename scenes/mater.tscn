@@ -29,6 +29,7 @@ script = ExtResource("1_1gee6")
 [node name="Mater" type="Area2D" parent="Path2D/PathFollow2D"]
 scale = Vector2(0.593, 0.593)
 script = ExtResource("2_t7f71")
+bullet_speed = 400
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Mater"]
 scale = Vector2(0.14685309, 0.14685312)
@@ -41,3 +42,9 @@ shape = SubResource("RectangleShape2D_hjru3")
 
 [node name="Muzzle3" type="Marker2D" parent="Path2D/PathFollow2D/Mater"]
 position = Vector2(6.053069, 22.62034)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Path2D/PathFollow2D/Mater"]
+rect = Rect2(-31.650995, -21.365574, 63.439514, 41.960983)
+
+[connection signal="screen_entered" from="Path2D/PathFollow2D/Mater/VisibleOnScreenNotifier2D" to="Path2D/PathFollow2D/Mater" method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="Path2D/PathFollow2D/Mater/VisibleOnScreenNotifier2D" to="Path2D/PathFollow2D/Mater" method="_on_visible_on_screen_notifier_2d_screen_exited"]

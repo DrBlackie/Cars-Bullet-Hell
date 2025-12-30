@@ -1,6 +1,7 @@
 extends Area2D
 
 @onready  var Bullet_scene = preload("res://scenes/bullet.tscn")
+@onready var mater_audio = $AudioStreamPlayer2D
 @export var burst_count := 8
 @export var burst_cooldown := 1.5
 @export var burst_spacing := 0.05
@@ -10,6 +11,7 @@ var on_screen = false
 
 func _ready():
 	player = get_tree().get_first_node_in_group("Player")
+	mater_audio.play()
 
 func start_firing():
 	while on_screen:
@@ -41,3 +43,4 @@ func _on_visible_on_screen_notifier_2d_screen_entered():
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	on_screen = false
+	mater_audio.play()

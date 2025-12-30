@@ -89,5 +89,5 @@ shape = SubResource("CapsuleShape2D_i3pqv")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_hqtel")
-volume_db = -17.855
+volume_db = -10.245
 max_polyphony = 10
